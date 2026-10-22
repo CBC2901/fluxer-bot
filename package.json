@@ -1,0 +1,20 @@
+{
+  "name": "fluxer-bot",
+  "version": "1.0.0",
+  "description": "Modüler, çok dilli ekonomi, RP ve müzik Fluxer botu",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --test",
+    "check": "node --check src/index.js && node --check src/commands/economy.js && node --check src/commands/music.js && node --check src/commands/roleplay.js && node --check src/commands/index.js && node --check src/database.js && node --check src/locales/index.js"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "dependencies": {
+    "@fluxerjs/core": "^3.3.0",
+    "@fluxerjs/voice": "^3.1.0",
+    "dotenv": "^16.4.7",
+    "play-dl": "^1.9.7"
+  }
+}
